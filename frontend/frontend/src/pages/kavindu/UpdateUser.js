@@ -49,7 +49,7 @@ const UpdateUser = () => {
       })
       .catch((err) => {
         console.error(err);
-        setMessage("❌ Update failed");
+        setMessage("❌ Update failed!!");
       });
   };
 
