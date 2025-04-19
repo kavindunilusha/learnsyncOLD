@@ -21,7 +21,10 @@
 
     <properties>
         <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
 
     <dependencies>
         <!-- Spring Boot Web -->
@@ -50,6 +53,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Add this if you only want BCryptPasswordEncoder -->
+        <!-- Add this dependency to use BCryptPasswordEncoder without full Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <version>6.1.5</version> <!-- ✅ Use latest version if available -->
+        </dependency>
+
+
     </dependencies>
 
     <build>
