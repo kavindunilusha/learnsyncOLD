@@ -1,4 +1,4 @@
-package com.paf_grp.backend.model.pasindu;
+package com.paf_grp.backend.model.kavindu;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,7 +1,7 @@
-package com.paf_grp.backend.controller.pasindu;
+package com.paf_grp.backend.controller.kavindu;
 
-import com.paf_grp.backend.model.pasindu.User;
-import com.paf_grp.backend.repository.pasindu.UserRepository;
+import com.paf_grp.backend.model.kavindu.User;
+import com.paf_grp.backend.repository.kavindu.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
