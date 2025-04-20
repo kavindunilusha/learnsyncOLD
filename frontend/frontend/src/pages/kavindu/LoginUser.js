@@ -20,7 +20,7 @@ const LoginUser = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/api/users/login", credentials)
+      .post("http://localhost:8081/api/users/login", credentials)
       .then((res) => {
         localStorage.setItem("user", JSON.stringify(res.data));
         setMessage("✅ Login successful");

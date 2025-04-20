@@ -17,7 +17,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/users`)
+      .get(`http://localhost:8081/api/users`)
       .then((res) => {
         const user = res.data.find((u) => u.id === id);
         if (user) {
@@ -41,7 +41,7 @@ const UpdateUser = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:8080/api/users/${id}`, form)
+      .put(`http://localhost:8081/api/users/${id}`, form)
       .then((res) => {
         setMessage("✅ User updated successfully");
         localStorage.setItem("user", JSON.stringify(res.data));

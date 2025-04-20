@@ -24,7 +24,7 @@ const AddUser = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/api/users", form)
+      .post("http://localhost:8081/api/users", form)
       .then((res) => {
         console.log(res.data);
         setMessage("✅ User created successfully");
