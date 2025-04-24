@@ -4,14 +4,12 @@ import AddUser from "./pages/kavindu/AddUser";
 import UpdateUser from "./pages/kavindu/UpdateUser";
 import LoginUser from "./pages/kavindu/LoginUser";
 import UserProfile from "./pages/kavindu/UserProfile";
-import Home from "./pages/Home";
+import Home from "./pages/HomePage/Home";
+import MyLearning from "./pages/MyLearningPage/MyLearning";
 
 function App() {
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link> |<Link to="/users">Users</Link>
-      </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,6 +17,7 @@ function App() {
         <Route path="/update/:id" element={<UpdateUser />} />
         <Route path="/login" element={<LoginUser />} />
         <Route path="/profile" element={<UserProfile />} />
+        <Route path="/my-learning" element={<MyLearning />} />
       </Routes>
     </div>
   );
