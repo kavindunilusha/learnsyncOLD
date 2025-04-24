@@ -1,0 +1,268 @@
+/* Container */
+.mylearning-container {
+  min-height: 100vh;
+  background-color: #f5f8f5;
+}
+
+/* Header styles - reusing from Home page */
+.header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  color: #4a4a4a;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #2e7d32;
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Main Content */
+.mylearning-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Learning Banner */
+.learning-banner {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.banner-text h1 {
+  color: #2e7d32;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.banner-text h2 {
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.banner-text p {
+  color: #666;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Circular Progress */
+.banner-progress {
+  margin-left: 2rem;
+}
+
+.circular-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.progress-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.continue-btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.continue-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Topics Section */
+.topics-section {
+  margin-top: 2rem;
+}
+
+.topics-section h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.topics-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.topic-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.topic-card.expanded {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.topic-header {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.topic-header:hover {
+  background-color: #f5f8f5;
+}
+
+.topic-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2e7d32;
+}
+
+.topic-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.topic-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topic-progress .progress-bar {
+  width: 100px;
+  height: 8px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.topic-progress .progress {
+  height: 100%;
+  background-color: #2e7d32;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.expanded .expand-icon {
+  transform: rotate(180deg);
+}
+
+/* Subtopics */
+.subtopics-list {
+  background-color: #f8faf8;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.subtopic-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  color: #4a4a4a;
+  transition: color 0.3s;
+}
+
+.check-icon {
+  color: #999;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.check-icon.completed {
+  color: #2e7d32;
+}
+
+.subtopic-item span.completed {
+  color: #2e7d32;
+  text-decoration: none;
+}
